@@ -7,7 +7,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication(exclude = HibernateJpaAutoConfiguration.class)
+@SpringBootApplication(exclude = {ErrorMvcAutoConfiguration.class})
 @ComponentScan("com")
 public class SpringWebHiberAppApplication extends SpringBootServletInitializer{
 
